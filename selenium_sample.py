@@ -9,6 +9,7 @@ options.add_argument("--mute-audio") # 음소거
 options.add_argument("disable-gpu") # 그래픽 카드 기능 제거
 options.add_argument("User-Agent: Mozilla/5.0 \(Macintosh; Intel Mac OS X 10_15_7\) AppleWebKit/537.36 \(KHTML, like Gecko\) Chrome/108.0.0.0 Safari/5") # User-Agent 헤더 지정
 options.add_argument("lang=ko_KR") # 언어 지정
+options.add_experimental_option("excludeSwitches", ["enable-loggin"]) # 불필요한 에러 메시지 삭제
 options.add_argument("--no-sandbox") # 오류 나면 해볼 수 있는 옵션
 options.add_argument("--disable=dev-shm-usage") # 오류 나면 해볼 수 있는 옵션
 
