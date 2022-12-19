@@ -5,5 +5,4 @@ url = "https://www.google.com"
 
 response = get(url)
 
-soup =BeautifulSoup(response.text,"html.parser")
-
+soup = BeautifulSoup(response.text, "html.parser")
