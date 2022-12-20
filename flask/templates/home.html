@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Python Flask Sample</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css"
+    />
+    <title>Python Flask Sample - Times Table</title>
   </head>
   <body>
-    <h1>Python Flask Sample</h1>
-    <form action="/search" method="get">
-        <input type="text" name="keyword" placeholder="Write keyword"/>
+    <main class="container">
+      <h1>Python Flask Sample - Times Table</h1>
+      <form action="/result" method="get">
+        <input type="text" name="num" placeholder="Write Number" />
         <button>Enter</button>
-    </form>
+      </form>
+    </main>
   </body>
 </html>

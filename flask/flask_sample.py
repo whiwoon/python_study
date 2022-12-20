@@ -1,4 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
+from modules.timesTable import cal
 
 app = Flask(__name__)
 
@@ -8,10 +9,12 @@ def home():
     return render_template("home.html")
 
 
-@app.route("/search")
+@app.route("/result")
 def search():
-    return render_template("search.html")
+    num = int(request.args.get("num"))
+    result = cal(num)
+    return render_template("result.html", calNum=num, calResult=result)
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(port=8000)
