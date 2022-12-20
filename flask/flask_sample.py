@@ -4,13 +4,13 @@ app = Flask(__name__)
 
 
 @app.route("/")
-def hello_world():
-    return "Hello World!"
-
-
-@app.route("/home")
 def home():
-    return render_template("home.html", name="whiwoon")
+    return render_template("home.html")
+
+
+@app.route("/search")
+def search():
+    return render_template("search.html")
 
 
 if __name__ == "__main__":
